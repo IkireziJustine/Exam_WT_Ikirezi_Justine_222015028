@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+/* CSS styles for the page */
+    /* Body style */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background-image: url('./image/inventory.jpeg');
+      
+      height: 100vh;
+    }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333; /* Dark gray header background */
+            border-bottom: 5px solid #555; /* Darker gray border */
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: mediumvioletred; 
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: mediumvioletred; /* Dark gray dropdown text */
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: blueviolet; 
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333; /* Dark gray footer background */
+            text-align: center; 
+            width: 100%; 
+            height: 90px; 
+            color: #fff; /* White footer text */
+            font-size: 25px; 
+            margin-top: 20px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+
+    </style>
+</head>
+
+  <!-- Header section -->
+  <header>
+    <h1>Home</h1>
+  </header>
+  <!-- Search form -->
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+<div class="header">
+
+    <h3><i>Inventory Management System For Retail</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        </li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-contents">
+                    <a href="customers.php">customers</a>
+                <a href="product.php">product</a>
+                <a href="sales.php">sales</a>
+                <a href="purchase.php">purchase</a>
+                <a href="inventory.php">inventory</a>
+                <a href="warehouse.php">warehouse</a>
+                <a href="category.php">category</a>
+                <a href="employee.php">employee</a>
+                <a href="suppliers.php">suppliers</a>
+                <a href="transaction.php">transaction</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.php">Login</a>
+                <a href="register.php">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="content">
+   
+    <h1 style="color:darkblue;">INVENTORY MANAGEMENT SYSTEM FOR RETAIL</h1>
+    <p style="background-color: white;">An inventory management system for retail is a software solution designed to streamline the process of tracking, organizing, and managing merchandise within a retail environment. It typically includes features such as inventory tracking, order management, stock level monitoring, and reporting capabilities. By automating these tasks, the system helps retailers optimize their inventory levels, reduce stockouts and overstock situations, improve efficiency in order fulfillment, and ultimately enhance customer satisfaction. Additionally, it often integrates with other systems like point-of-sale (POS) systems and accounting software to provide a comprehensive retail management solution.</p>
+</div>
+<marquee> WELCOME ON OUR WEBSITE</marquee>
+
+<footer>
+    <p>Designed by Ikirezi Justine&reg; 2024</p>
+</footer>
+</body>
+</html>

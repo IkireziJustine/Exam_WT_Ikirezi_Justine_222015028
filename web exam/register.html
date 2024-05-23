@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* Styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the registration container */
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Styling for text inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the submit button */
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body style="background-image: url('path/to/your/image.jpg');background-repeat: no-repeat;background-size:cover;">
+    <!-- Registration form container -->
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form action="register.php" method="post">
+            <label>FirstName:</label>
+            <input type="text" name="fname" required><br><br>
+            <label>LastName:</label>
+            <input type="text" name="lname" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label>Username:</label>
+            <input type="text" name="username" required><br><br>
+            <label>Telephone:</label>
+            <input type="text" name="telephone" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br><br>
+            <label>Activation_code:</label>
+            <input type="text" name="activation_code" required><br>
+            <input type="submit" name="register" value="Register">
+        </form>
+    </div>
+</body>
+</html>

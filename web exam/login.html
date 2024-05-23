@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        /* Centering the form */
+        body {
+            background-image: url('./Images/login.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the form */
+        form {
+            background-color: gray;
+            width: 500px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Styling for labels */
+        label {
+            color: white;
+        }
+
+        /* Styling for inputs */
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for links */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Styling for the forgot password link */
+        .forgot-password {
+            font-size: 20px;
+        }
+
+        /* Styling for the create new account link */
+        .create-account {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form for user login -->
+    <form action="login.php" method="post">
+        <h2>User Login Form</h2>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <p class="forgot-password"><a href="forgot_password.php">Forgot Password</a></p>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Cancel">
+        
+        <p class="create-account"><i>If You don't have an account</i> <a href="register.html">Create New Account</a></p>
+    </form>
+</body>
+</html>
